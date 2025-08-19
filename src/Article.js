@@ -1,24 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <article>
+function Article()
+{
+    return(
+        <article>
       <h2>Современные десктопные процессоры</h2> 
       <p>– это ключевые компоненты персональных компьютеров, 
         отвечающие за обработку данных и управление операциями. 
@@ -31,8 +14,5 @@ function App() {
 
       </p>
       </article>
-    </div>
-  );
+    )
 }
-
-export default App;
