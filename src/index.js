@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App';
+import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
+
+let nav = {"Главная": "/index", "Новости" : "/news", "О компании" : "/about", "Магазин": "/shop", "Контакты":"/contacs"};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  // <React.StrictMode>
-    <App />
+    <App navigation = {nav}/>
  // </React.StrictMode>
 );
 

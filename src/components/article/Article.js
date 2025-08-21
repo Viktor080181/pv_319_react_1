@@ -1,10 +1,13 @@
 import './Article.css';
 
-function Article()
+function Article(props)
 {
+  let {title, content} = props;
     return(
         <article>
-      <h2>Современные десктопные процессоры</h2> 
+          <h1> style = {{title:"darkgreen"}}</h1>
+          {props.contents}
+     {/* <h2>Современные десктопные процессоры</h2> 
       <p>– это ключевые компоненты персональных компьютеров, 
         отвечающие за обработку данных и управление операциями. 
         Они характеризуются высокой тактовой частотой, 
@@ -14,9 +17,15 @@ function Article()
         множитель для разгона. Важным аспектом 
         является эффективное охлаждение для предотвращения перегрева
 
-      </p>
+      </p>*/}
          
       </article>
     )
 }
+Article.defaultProps = 
+{
+  title: "Заголовок статьи",
+  content: "Содержимое статьи"
+}
+
 export default Article;
