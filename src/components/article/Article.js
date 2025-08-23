@@ -5,8 +5,8 @@ function Article(props)
   let {title, content} = props;
     return(
         <article>
-          <h1> style = {{title:"darkgreen"}}</h1>
-          {props.contents}
+          <h1 style = {{title:"darkgreen"}}>{title}</h1>
+          {content}
      {/* <h2>Современные десктопные процессоры</h2> 
       <p>– это ключевые компоненты персональных компьютеров, 
         отвечающие за обработку данных и управление операциями. 
