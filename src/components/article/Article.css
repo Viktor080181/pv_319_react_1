@@ -1,7 +1,37 @@
-article
-{
-    color:rgb(64,64,64);
-    background-color: rgb(211,211,211);
-    padding: 25px;
-    margin: 0;
+.app {
+  display: flex; /* Используем Flexbox */
+  flex-wrap: wrap; /* Позволяем переносить элементы на новую строку */
+  justify-content: center; /* Центрируем карточки */
+  gap: 20px; /* Пробел между карточками */
+  padding: 20px; /* Отступ вокруг контейнера */
+}
+
+.card {
+  background-color: #fff; /* Цвет фона карточки */
+  border: 1px solid #ddd; /* Рамка карточки */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  width: 200px; /* Ширина карточки */
+  text-align: center; /* Центрируем текст внутри карточки */
+  padding: 10px; /* Отступы внутри карточки */
+}
+
+.card img {
+  max-width: 100%; /* Ограничиваем ширину изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 4px; /* Скругленные углы для изображения */
+}
+
+.name {
+  font-weight: bold; /* Жирный шрифт для имени */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+.gender img {
+  width: 20px; /* Ширина изображения пола */
+  height: 20px; /* Высота изображения пола */
+}
+
+.age {
+  color: #666; /* Цвет текста возраста */
 }
