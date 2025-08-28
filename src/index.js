@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/App.js';
 //import reportWebVitals from './reportWebVitals';
 
-let nav = {"Главная":"/index", "Новости":"/news", " компании":"/about", "Магазин":"/shop", "Контакты":"/contacs"};
+let nav = {" Главная":"/index", " Новости":"/news", " Компании":"/about", " Магазин":"/shop", " Контакты":"/contacs"};
 // let nav_icons = {"🏠", "📰", "🏢", "🛒", "📞"};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
